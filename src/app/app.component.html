@@ -1,0 +1,33 @@
+<div class="class1">
+    <h4>Routing</h4>
+    <a class="head" [routerLink]="['home']" routerLinkActive='active-link'>Home</a>
+    <a class="head" [routerLink]="['products/Samsung']" routerLinkActive='active-link'>Samsung</a>
+    <a class="head" [routerLink]="['products/Apple']" routerLinkActive='active-link'>Apple</a>
+    <a class="head" [routerLink]="['products/Google']" routerLinkActive='active-link'>Google</a>
+    <a class="head" [routerLink]="['contact']" routerLinkActive='active-link'>Contact</a>
+    
+    <!--1 & 2 start Multiple router-outlet -->
+    <a class="head" [routerLink]="['user']" routerLinkActive='active-link'>User</a>
+    <!--1 & 2 end Multiple router-outlet -->
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+    <!--1 start Multiple router-outlet -->
+    <!-- <a [routerLink]="[{outlets:{uList:['userlist']}}]">User links</a>
+    <a [routerLink]="[{outlets:{uInfo:['userinfo']}}]">User info</a>
+   <div style="color:green">
+        <router-outlet name='uList'></router-outlet></div>
+    <div style="color:red">
+        <router-outlet name='uInfo'></router-outlet>
+    </div> -->
+    <!--1 end Multiple router-outlet -->
+
+    <!--2 start Multiple router-outlet -->
+    <div style="color:green">
+        <router-outlet name='uList'></router-outlet></div>
+    <div style="color:red">
+        <router-outlet name='uInfo'></router-outlet>
+    </div>
+    <!--2 end Multiple router-outlet -->
+</div>

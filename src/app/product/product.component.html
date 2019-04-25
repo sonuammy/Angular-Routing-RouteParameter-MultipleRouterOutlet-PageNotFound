@@ -1,0 +1,20 @@
+<div>
+  <h2>Products</h2>
+  <h3>{{brand}}</h3>
+  <table border="1">
+    <tr>
+      <th>Product ID</th>
+      <th>Product Name</th>
+      <th>Cost</th>
+      <th>Brand</th>
+    </tr>
+    <tr *ngFor="let product of matchingproducts">
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.cost}}</td>
+      <td>{{product.brand}}</td>
+    </tr>
+  </table>
+  <!-- <a routerLink="/home">Back to Home</a> -->
+  <a [routerLink]="['/home']" routerLinkActive='active-link'>Back to Home</a>
+</div>

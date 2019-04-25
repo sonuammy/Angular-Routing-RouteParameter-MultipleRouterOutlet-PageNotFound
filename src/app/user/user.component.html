@@ -1,0 +1,11 @@
+<p>
+  user works!
+</p>
+
+<!--2 start Multiple router-outlet -->
+
+<a [routerLink]="[{outlets:{uList:['userlist']}}]">User links</a>
+<a [routerLink]="[{outlets:{uInfo:['userinfo']}}]">User info</a>
+<!-- <a [routerLink]="[{outlets:{uList:['userlist'], uInfo:['userinfo']}}]">links</a> -->
+
+<!--2 end Multiple router-outlet -->
